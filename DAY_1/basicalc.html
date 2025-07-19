@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let choice;
+
+    do {
+      choice = prompt(
+        "Choose an operation:\n" +
+        "1 - Add\n" +
+        "2 - Subtract\n" +
+        "3 - Multiply\n" +
+        "4 - Divide\n" +
+        "5 - Exit"
+      );
+
+      if (choice === "5") {
+        console.log("You exited the calculator. Bye!");
+        break; 
+      }
+
+
+      let num1 = parseFloat(prompt("Enter the first number:"));
+      let num2 = parseFloat(prompt("Enter the second number:"));
+
+      
+      if (isNaN(num1) || isNaN(num2)) {
+        console.log("Invalid ");
+        continue; 
+      }
+
+      switch (choice)
+      {
+        case "1":
+          console.log(`🔢 ${num1} + ${num2} = ${num1 + num2}`);
+          break;
+        case "2":
+          console.log(` ${num1} - ${num2} = ${num1 - num2}`);
+          break;
+        case "3":
+          console.log(` ${num1} * ${num2} = ${num1 * num2}`);
+          break;
+        case "4":
+          if (num2 === 0) {
+            console.log("Cannot divide by zero.");
+          } else {
+            console.log(` ${num1} / ${num2} = ${num1 / num2}`);
+          }
+          break;
+        default:
+          console.log(" Invalid choice.");
+          break;
+      }
+    } while (true); 
+    </script>
+</body>
+</html>
