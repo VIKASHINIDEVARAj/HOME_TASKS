@@ -1,0 +1,63 @@
+//group related data in a structured way
+//  let details=
+// {
+//   name:"js",
+//   totalmark:100,
+//   age:23,
+//   //nested objs
+//   //while calling the function [the main object name.nested object name.key]
+//   subject:{
+//     eng:90,
+//     math:99,
+//     french:100,
+//   },
+//   sum:function(){
+//     let total=this.subject.eng+this.subject.math+this.subject.french;
+//     return total;
+//   }
+// }
+
+// console.log(details.name);
+// console.log(details ["totalmark"]); //call by key or by square bracs with double quotes
+// console.log(details ["age"]);
+// console.log(details.subject.eng);
+// console.log(details.subject.math);
+// console.log(details.subject["french"]);
+// //calling the function
+// console.log(details.sum());
+//OBJECT DESTRUCTOR IS A SYNTAX
+//ALLOWS TO EXTRACT VALUES FROM OBJECTS AND ASSIGN THEM TO VARIABLES IN A CLEAN WAY
+// let person=
+//   {
+//     salary:30000,
+//     job:"Developer",
+//   }
+//   const{salary,job}=person
+//   console.log(salary+" "+job);
+//   //first way using Array
+//   let arr=new Array(1,2,"three");
+//   console.log(arr[2]);
+//   //second way using square bracs
+//   let arr2=["js",true];
+//   console.log(arr2[0]);
+
+//   //array destructing
+//   const[name,b1,b2]=arr2;
+//   console.log(name)
+
+  //filter- returns the new array containing only only the elements that match a condition
+  // let student=[
+  //   {name:"vish",grade:"A",},
+  //   {name:"shyam",grade:"B",},
+  //   {name:"gloria",grade:"B",},
+  //   {name:"shyla",grade:"A",}
+
+  // ]
+  // let gradestuds=student.filter(student => student.grade==="A")
+  // console.log(gradestuds);
+
+  //SPLICE CAN ADD AND REMOVE AT A SPECIFIC INDEX
+let data=[1,2,3,4,5];
+let result=data.splice(1,2, insert 6);
+console.log(data);
+
