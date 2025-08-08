@@ -27,8 +27,8 @@ class Bank{
 
         }
 }
-let b=newbank(10);
-console.log(b);
+let b=new Bank(10);
+console.log(b._balance);
 
 b.balance=100;
 console.log(b._balance);
